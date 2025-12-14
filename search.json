@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "slides.html#algèbre-les-opérations",
+    "href": "slides.html#algèbre-les-opérations",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Algèbre: les opérations",
+    "text": "Algèbre: les opérations\nA retenir: les calculs avec les nombres complexes = calcul littéral avec la lettre \\(\\textbf{i}\\), en simplifiant avec la règle \\(\\textbf{i}^2=-1\\).\n\nSomme:\n\n\\(z_1=3+2\\textbf{i}\\)\n\\(z_2=-4+6\\textbf{i}\\)\n\\(z_1+z_2=3+2\\textbf{i}+(-4+6\\textbf{i})=3-4+(2+6)\\textbf{i}=-1+8\\textbf{i}\\)"
+  },
+  {
+    "objectID": "slides.html#algèbre-les-opérations-1",
+    "href": "slides.html#algèbre-les-opérations-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Algèbre: les opérations",
+    "text": "Algèbre: les opérations\n\nDifférence:\n\n\\(z_1=3+2\\textbf{i}\\)\n\\(z_2=-4+6\\textbf{i}\\)\n\\(z_1-z_2=3+2\\textbf{i}-(-4+6\\textbf{i})=3+4+(2-6)\\textbf{i}=7-4\\textbf{i}\\)"
+  },
+  {
+    "objectID": "slides.html#algèbre-les-opérations-2",
+    "href": "slides.html#algèbre-les-opérations-2",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Algèbre: les opérations",
+    "text": "Algèbre: les opérations\n\nProduit:\n\n\\(z_1=3+2\\textbf{i}\\)\n\\(z_2=-4+6\\textbf{i}\\)\n\\[\n\\begin{align*}\nz_1z_2&=(3+2\\textbf{i})(-4+6\\textbf{i})\\\\\n&=3\\cdot(-4)+3\\cdot 6\\textbf{i}+2\\textbf{i}\\cdot (-4)+2\\textbf{i}\\cdot 6\\textbf{i}\\\\\n&=-12+18\\textbf{i}-8\\textbf{i}+12\\textbf{i}^2\\\\\n&=-12+10\\textbf{i}-12\\\\\n&=-24+10\\textbf{i}\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "slides.html#algèbre-le-conjugué",
+    "href": "slides.html#algèbre-le-conjugué",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Algèbre: le conjugué",
+    "text": "Algèbre: le conjugué\n\nConjugué: on change le signe de la partie imaginaire\n\nSi \\(z=3+2\\textbf{i}\\), alors \\(\\overline{z}=3-2\\textbf{i}\\)\n\nModule: si \\(z=a+b\\textbf{i}\\), alors \\(|z|=\\sqrt{a^2+b^2}\\)\n\nSi \\(z=3-2\\textbf{i}\\), alors \\(|z|=\\sqrt{3^2+(-2)^2}=\\sqrt{13}\\).\nPropriété importante: si \\(z=a+b\\textbf{i}\\), alors \\(z\\cdot \\overline{z}=|z|^2\\)"
+  },
+  {
+    "objectID": "slides.html#algèbre-les-opérations-3",
+    "href": "slides.html#algèbre-les-opérations-3",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Algèbre: les opérations",
+    "text": "Algèbre: les opérations\n\nQuotient: on multiplie le dénominateur par son conjugué! (pour utiliser que \\(z\\overline{z}=|z|^2\\in\\mathbb{R}\\)).\n\n\\[\n\\dfrac{z_1}{z_2}=\\dfrac{z_1\\overline{z_2}}{z_2\\overline{z_2}}=\\dfrac{z_1\\overline{z_2}}{|z_2|^2}\n\\]\nPar exemple: si \\(z_1=-4+6\\textbf{i}\\) et \\(z_2=3-2\\textbf{i}\\), alors\n\n\\(z_2\\overline{z_2}=|z_2|^2=\\sqrt{13}^2=13\\)\n\\(\\dfrac{z_1}{z_2}=\\dfrac{z_1\\overline{z_2}}{|z_2|^2}=\\dfrac{(-4+6\\textbf{i})(3+2\\textbf{i})}{13}=\\dfrac{-24+10\\textbf{i}}{13}=\\dfrac{-24}{13}+\\dfrac{10}{13}\\textbf{i}\\)"
+  },
+  {
+    "objectID": "slides.html#équations-du-second-degré",
+    "href": "slides.html#équations-du-second-degré",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Équations du second degré",
+    "text": "Équations du second degré\nSoit \\(ax^2+bx+c=0\\) , où \\(a,b,c\\in\\mathbb{R}\\). Vous avez vu que cette équation n’a pas toujours une solution dans \\(\\mathbb{R}\\). En élargissant les nombres réels en ajoutant les nombres complexes, on arrive à résoudre toutes les équations du second degré."
+  },
+  {
+    "objectID": "slides.html#équations-du-second-degré-1",
+    "href": "slides.html#équations-du-second-degré-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Équations du second degré",
+    "text": "Équations du second degré\nPour résoudre une équation, on applique la même méthode qu’avant:\n\nOn calcule \\(\\Delta=b^2-4ac\\).\nIl y a trois cas, en fonction du signe de \\(\\Delta\\):\n\n\n\\(\\Delta&gt;0\\): il y a deux solutions réelles:\n\\[ x_{1,2}=\\dfrac{-b\\pm\\sqrt{\\Delta}}{2a} \\]\n\\(\\Delta=0\\): il y a une solution réelle: \\[ x=\\dfrac{-b}{2a} \\]"
+  },
+  {
+    "objectID": "slides.html#équations-du-second-degré-2",
+    "href": "slides.html#équations-du-second-degré-2",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Équations du second degré",
+    "text": "Équations du second degré\n\n\\(\\Delta&lt;0\\): il y a deux solutions complexes:\n\n\\[x_{1,2}=\\dfrac{-b\\pm\\sqrt{|\\Delta|}\\cdot \\textbf{i}}{2a}\\]"
+  },
+  {
+    "objectID": "slides.html#exemple",
+    "href": "slides.html#exemple",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Exemple",
+    "text": "Exemple\n\\(x^2-x+1=0\\)\nIci \\(a=1\\), \\(b=-1\\) et \\(c=1\\). Donc \\(\\Delta=b^2-4ac=1-4=-3\\). Donc on a deux racines complexes\n\\[\nx_{1,2}=\\dfrac{-b\\pm\\sqrt{|\\Delta|}\\textbf{i}}{2a}=\\dfrac{1\\pm\\sqrt{3}\\textbf{i}}{2}.\n\\]\nDonc l’ensemble \\(S\\) des solutions de l’équation est \\(S=\\left\\{\\dfrac{1+\\sqrt{3}\\textbf{i}}{2};\\dfrac{1-\\sqrt{3}\\textbf{i}}{2}\\right\\}\\)."
+  },
+  {
+    "objectID": "slides.html#exemple-1",
+    "href": "slides.html#exemple-1",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Exemple",
+    "text": "Exemple\nDans les équations du 2e degré incomplètes de la forme \\(x^2=a\\), on peut aller plus vite:\n\\(x^2=-4\\) a pour solutions \\(x=\\pm\\sqrt{4}\\textbf{i}=\\pm 2\\textbf{i}\\). Donc l’ensemble \\(S\\) des solutions de l’équation est \\(S=\\{2\\textbf{i},-2\\textbf{i}\\}\\)."
+  },
+  {
+    "objectID": "slides.html#sélection-dexercices",
+    "href": "slides.html#sélection-dexercices",
+    "title": "Introduction mathématique aux sciences de la vie",
+    "section": "Sélection d’exercices",
+    "text": "Sélection d’exercices\nVous ne devez savoir faire que les exercices 5.A et 5.B. (sauf le 2) et 5)) Dans le QCM, seule les questions C et D sont à savoir faire.\nPour le reste de la séance:\n\nRéaliser quelques exercices de la sélection (correctif sur moodle)\nRéaliser la simulation d’examen."
+  }
+]
