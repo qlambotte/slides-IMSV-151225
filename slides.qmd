@@ -1,0 +1,185 @@
+---
+title: "Introduction mathématique aux sciences de la vie"
+subtitle: "Séance d'exercices du 15/12/25"
+lang: fr
+format: 
+ revealjs:
+      theme: [default, clean.scss]
+      qrcode: 'assets/qrcode.png'
+      pdfl: '[Télécharger le PDF](assets/slides.pdf){.pdf-link target="_blank"}'
+      menu:
+        side: left
+      slide-number: true
+      transition: fade
+      revealjs-plugins:
+        - tldreveal
+      template-partials:
+        - title-slide.html
+
+---
+::: {.content-hidden}
+
+\newcommand{\dom}[1]{\text{dom}{\left(#1\right)}}
+\newcommand{\IR}{\mathbb{R}}
+\newcommand{\e}{\text{e}}
+\newcommand{\dx}{\text{d}x}
+\newcommand{\IQ}{\mathbb{Q}}
+\newcommand{\du}{\text{d}u}
+\newcommand{\IC}{\mathbb{C}}
+\newcommand{\i}{\textbf{i}}
+
+\newcommand{\vect}[1]{\overrightarrow{#1}}
+\newcommand{\nv}[1]{\lVert\overrightarrow{#1}\rVert}
+
+:::
+
+
+# Remédiations
+
+Les remédiations seront consacrées à la correction de la simulation d'examen.
+
+- Le lundi, la remédiation commence à 16h15
+- le vendredi, la remédiation commence à 16h20.
+
+
+
+# Examen
+
+- 12 questions à réaliser en 2 heures. **Attention** comme dit à plusieurs reprises, il s'agira d'un QCM à points négatifs: +4 pour une bonne réponse, -0,8 pour une mauvaise réponse et 0 pour une abstention.
+- Si vous ne passez pas l'examen de maths en janvier, indiquez le sur moodle via le sondage "Présence".
+
+
+
+# Les nombres complexes
+
+Un nombre complexe est une expression de la forme $z=a+b\i$, où $a,b\in\IR$. Les opérations algébriques sur ces nombres se font comme avant, en appliquant la règle suivante
+
+$$
+\i^2=-1
+$$
+
+Dans l'écriture $a+b\i$, $a$ est la partie réelle de $z$ et $b$ la partie imaginaire.
+
+L'ensemble de nombres complexes est noté $\IC$.
+
+
+## Algèbre: les opérations
+
+A retenir: les calculs avec les nombres complexes = calcul littéral avec la lettre $\i$, en simplifiant avec la règle $\i^2=-1$.
+
+1. Somme: 
+
+$z_1=3+2\i$
+
+$z_2=-4+6\i$
+
+$z_1+z_2=3+2\i+(-4+6\i)=3-4+(2+6)\i=-1+8\i$
+
+## Algèbre: les opérations
+
+2. Différence: 
+
+$z_1=3+2\i$
+
+$z_2=-4+6\i$
+
+$z_1-z_2=3+2\i-(-4+6\i)=3+4+(2-6)\i=7-4\i$
+
+## Algèbre: les opérations
+
+3. Produit:
+
+$z_1=3+2\i$
+
+$z_2=-4+6\i$
+
+$$
+\begin{align*}
+z_1z_2&=(3+2\i)(-4+6\i)\\
+&=3\cdot(-4)+3\cdot 6\i+2\i\cdot (-4)+2\i\cdot 6\i\\
+&=-12+18\i-8\i+12\i^2\\
+&=-12+10\i-12\\
+&=-24+10\i
+\end{align*}
+$$
+
+
+## Algèbre: le conjugué
+
+4. Conjugué: on change le signe de la partie imaginaire
+
+Si $z=3+2\i$, alors $\overline{z}=3-2\i$
+
+5. Module: si $z=a+b\i$, alors $|z|=\sqrt{a^2+b^2}$
+
+Si $z=3-2\i$, alors $|z|=\sqrt{3^2+(-2)^2}=\sqrt{13}$.
+
+
+Propriété **importante**: si $z=a+b\i$, alors $z\cdot \overline{z}=|z|^2$
+
+
+## Algèbre: les opérations
+
+6. Quotient: on multiplie le dénominateur par son conjugué!
+(pour utiliser que $z\overline{z}=|z|^2\in\IR$).
+
+$$
+\dfrac{z_1}{z_2}=\dfrac{z_1\overline{z_2}}{z_2\overline{z_2}}=\dfrac{z_1\overline{z_2}}{|z_2|^2}
+$$
+
+Par exemple: si $z_1=-4+6\i$ et $z_2=3-2\i$, alors 
+
+- $z_2\overline{z_2}=|z_2|^2=\sqrt{13}^2=13$
+- $\dfrac{z_1}{z_2}=\dfrac{z_1\overline{z_2}}{|z_2|^2}=\dfrac{(-4+6\i)(3+2\i)}{13}=\dfrac{-24+10\i}{13}=\dfrac{-24}{13}+\dfrac{10}{13}\i$
+
+## Équations du second degré
+
+Soit $ax^2+bx+c=0$ , où $a,b,c\in\IR$. Vous avez vu que cette équation n'a pas toujours une solution dans $\IR$. En élargissant les nombres réels en ajoutant les nombres complexes, on arrive à résoudre **toutes** les équations du second degré.
+
+## Équations du second degré
+
+
+Pour résoudre une équation, on applique la même méthode qu'avant:
+
+1. On calcule $\Delta=b^2-4ac$.
+2. Il y a trois cas, en fonction du signe de $\Delta$:
+
+  - $\Delta>0$: il y a deux solutions **réelles**:  
+$$ x_{1,2}=\dfrac{-b\pm\sqrt{\Delta}}{2a} $$
+
+  - $\Delta=0$: il y a une solution **réelle**:
+  $$ x=\dfrac{-b}{2a} $$
+
+## Équations du second degré
+
+
+  - $\Delta<0$: il y a deux solutions **complexes**:
+
+  $$x_{1,2}=\dfrac{-b\pm\sqrt{|\Delta|}\cdot \i}{2a}$$
+
+## Exemple
+
+$x^2-x+1=0$
+
+Ici $a=1$, $b=-1$ et $c=1$. Donc $\Delta=b^2-4ac=1-4=-3$. Donc on a **deux racines complexes**
+
+$$
+x_{1,2}=\dfrac{-b\pm\sqrt{|\Delta|}\i}{2a}=\dfrac{1\pm\sqrt{3}\i}{2}.
+$$
+
+Donc l'ensemble $S$ des solutions de l'équation est $S=\left\{\dfrac{1+\sqrt{3}\i}{2};\dfrac{1-\sqrt{3}\i}{2}\right\}$.
+
+## Exemple
+
+Dans les équations du 2e degré incomplètes de la forme $x^2=a$, on peut aller plus vite:
+
+$x^2=-4$ a pour solutions $x=\pm\sqrt{4}\i=\pm 2\i$. Donc l'ensemble $S$ des solutions de l'équation est $S=\{2\i,-2\i\}$.
+
+## Sélection d'exercices
+
+Vous ne devez savoir faire que les exercices 5.A et 5.B. (sauf le 2) et 5)) Dans le QCM, seule les questions C et D sont à savoir faire.
+
+Pour le reste de la séance:
+
+- Réaliser quelques exercices de la sélection (correctif sur moodle)
+- Réaliser la simulation d'examen.
