@@ -39,7 +39,7 @@ format:
 Les remédiations seront consacrées à la correction de la simulation d'examen.
 
 - Le lundi, la remédiation commence à 16h15
-- le vendredi, la remédiation commence à 16h20.
+- le vendredi, la remédiation commence à 14h20.
 
 
 
