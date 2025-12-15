@@ -143,7 +143,7 @@
 <p>Les remédiations seront consacrées à la correction de la simulation d’examen.</p>
 <ul>
 <li>Le lundi, la remédiation commence à 16h15</li>
-<li>le vendredi, la remédiation commence à 16h20.</li>
+<li>le vendredi, la remédiation commence à 14h20.</li>
 </ul>
 </section>
 
@@ -563,7 +563,7 @@ x_{1,2}=\dfrac{-b\pm\sqrt{|\Delta|}\textbf{i}}{2a}=\dfrac{1\pm\sqrt{3}\textbf{i}
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/qlambotte\.github\.io\/slides-IMSV-151225\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
